@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Spring task 4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary container">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href=index.html>Twitter</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="ms-auto" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href=index.html>Tweets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href=index.html>Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href=index.html>Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="info2" class="m-auto mt-5" style="width: 250px">
+<p>Email: <span id="email"></span></p>
+<p>Full Name: <span id="fullName"></span></p>
+<p>Country: <span id="country"></span></p>
+<p>Date: <span id="date"></span></p>
+</div>
+<script>
+    document.getElementById("email").innerText = localStorage.getItem('keyEmail');
+    //document.getElementById("password").innerText = localStorage.getItem('keyPassword');
+    document.getElementById("fullName").innerText = localStorage.getItem('keyFullName');
+    document.getElementById("country").innerText = localStorage.getItem('keyCountry');
+    document.getElementById("date").innerText = localStorage.getItem('keyDate');
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
